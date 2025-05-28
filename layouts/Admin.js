@@ -72,7 +72,7 @@ export default function Admin({ children, ...rest }) {
       if (navigator.platform.indexOf("Win") > -1) {
         ps.destroy();
       }
-      window.removeEventListener("resize", resizeFunction);
+      window.removeEventListener("resized", resizeFunction);
     };
   }, [mainPanel]);
   return (
